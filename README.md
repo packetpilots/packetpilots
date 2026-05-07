@@ -1,9 +1,5 @@
 ## Hi there 👋
 
-<!--
-**packetpilots/packetpilots** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-
 I'm **Taha**, an IT professional focused on enterprise end‑device support with a growing passion for system administration, networking, and AI‑driven environments.
 
 ### 🔭 I’m currently working on
@@ -40,6 +36,3 @@ I'm **Taha**, an IT professional focused on enterprise end‑device support with
 
 ### ⚡ Fun fact
 - I enjoy understanding *how systems actually fail* in the real world—and figuring out how to automate, harden, or redesign them so they fail less.
-
--->
-
