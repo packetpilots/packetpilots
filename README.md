@@ -28,8 +28,8 @@ I'm **Taha**, an IT professional focused on enterprise end‑device support with
 - Learning paths toward sysadmin and network engineering roles  
 
 ### 📫 How to reach me
-- GitHub: https://github.com/taha-enguneer
-- LinkedIn: *(add your link here)*
+- GitHub: https://github.com/packetpilots
+- LinkedIn: https://www.linkedin.com/in/taha-elhassadi-5922379/
 
 ### 😄 Pronouns
 - He / Him
