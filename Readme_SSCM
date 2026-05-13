@@ -1,0 +1,28 @@
+Summary
+Added a new reusable script SCCMClient_Remediation_Remote.ps1 that is designed specifically for corrupted SCCM client recovery, including uninstall, cleanup, reinstall, and post-install validation flow. 
+
+Added remote execution support using Invoke-Command so you can target specific devices with -ComputerName (and optional -Credential) instead of logging in manually. 
+
+Added safer operational controls:
+
+Parameterized site settings (-SiteCode, -DnsSuffix, source/local paths). 
+
+Structured logging per endpoint in C:\Windows\Temp\SCCM_Remediation_<Computer>.log. 
+
+Best-effort wrapper for non-critical operations to reduce hard-fail interruptions. 
+
+Optional WMI repository verification/salvage for corruption cases via -RepairWmi. 
+
+Added post-install health actions: SCCM site assignment check, machine policy triggers, and optional gpupdate control (-SkipGpupdate). 
+
+How to run remotely for certain devices (example):
+
+# Single device
+.\SCCMClient_Remediation_Remote.ps1 -ComputerName PC-1234 -RepairWmi
+
+# Multiple devices
+.\SCCMClient_Remediation_Remote.ps1 -ComputerName PC-1234,PC-5678 -RepairWmi
+
+# With explicit credentials
+$cred = Get-Credential
+.\SCCMClient_Remediation_Remote.ps1 -ComputerName PC-1234 -Credential $cred -RepairWmi
